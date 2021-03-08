@@ -71,6 +71,7 @@
         .pie{
             background: rgb(230, 175, 46);
         }
+
 /*Media Query tablet*/
 
 @media all and (max-width: 800px){
