@@ -1,0 +1,51 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+    .header{
+        background: black;
+    }
+        .menu{
+            background: rgb(45, 64, 89);
+        }
+            .logo{
+                background: rgb(234, 84, 85);
+            }
+            .nav{
+                background: rgb(234, 84, 85);
+            }
+            .social{
+                background: rgb(234, 84, 85);
+            }
+        .texto-principal{
+            background: rgb(240, 123,63);
+        }    
+            h1{
+                background: rgb(254,212,96);
+            }
+    .section{
+        background: black
+    }
+        .articulos{
+            background: rgb(78, 78, 106);
+        }
+            .article{
+                background: rgb(31, 108, 176);
+            }
+            .navegacion{
+                background: rgb(112, 163, 196);
+            }
+        aside{
+            background: rgb(247, 63, 82);
+        }
+            .publicidad{
+                background: rgb(254, 234, 133);
+            }
+    footer{
+        background: black;
+    }
+        .pie{
+            background: rgb(230, 175, 46);
+        }
