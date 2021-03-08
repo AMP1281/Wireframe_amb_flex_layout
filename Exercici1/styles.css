@@ -3,21 +3,33 @@
     padding: 10px;
     box-sizing: border-box;
 }
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
 
     .header{
         background: black;
+        display: flex;
+        flex-flow: column nowrap;
     }
         .menu{
             background: rgb(45, 64, 89);
+            display: flex;
+            flex-flow: row nowrap;
+            margin-bottom: 0.5px;
         }
             .logo{
                 background: rgb(234, 84, 85);
+                flex: 1 1 auto;
             }
             .nav{
                 background: rgb(234, 84, 85);
+                flex: 5 1 auto;
             }
             .social{
                 background: rgb(234, 84, 85);
+                flex: 1 1 auto;
             }
         .texto-principal{
             background: rgb(240, 123,63);
@@ -26,19 +38,27 @@
                 background: rgb(254,212,96);
             }
     .section{
-        background: black
+        background: black;
+        display: flex;
     }
         .articulos{
             background: rgb(78, 78, 106);
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+
         }
             .article{
                 background: rgb(31, 108, 176);
+                flex: 1 1 40%;
             }
             .navegacion{
                 background: rgb(112, 163, 196);
+                flex: 1 1 100%;
             }
         aside{
             background: rgb(247, 63, 82);
+            flex: 1 1 auto;
         }
             .publicidad{
                 background: rgb(254, 234, 133);
