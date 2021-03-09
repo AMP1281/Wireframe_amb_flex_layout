@@ -44,10 +44,9 @@
     }
         .articulos{
             background: rgb(78, 78, 106);
-            flex: 2 1 auto;
             display: flex;
             flex-flow: row wrap;
-
+            flex: 2 1 auto;
         }
             .article{
                 background: rgb(31, 108, 176);
@@ -60,6 +59,8 @@
         aside{
             background: rgb(247, 63, 82);
             flex: 1 1 auto;
+            display: flex;
+            flex-flow: column wrap;
         }
             .publicidad{
                 background: rgb(254, 234, 133);
@@ -77,6 +78,55 @@
 @media all and (max-width: 800px){
     .section{
         background: rgb(254, 255, 3);
-        flex-direction: column;
+        flex-flow: column nowrap;
     }
 }
+
+/*Media Query Telefono*/
+
+@media all and (max-width: 480px){
+    .menu{
+        height: 100px;
+        align-items: center;
+    }
+        .logo{
+            height: 30px;
+        }
+        .nav{
+            height: 30px;
+        }
+        .social{
+            height: 30px;
+        }
+    .texto-principal{
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+        h1{
+            height: 30px;
+        }
+    .section{
+        height: 450px;
+    }
+        .articulos{
+            align-items: center;
+        }
+            .article{
+                height: 30px;
+            }
+            .navegacion{
+                height: 30px;
+            }
+        .publicidad{
+            height: 30px;
+            flex: 1 1 auto;
+        }
+        footer{
+            height: 70px;
+        }
+        .pie{
+            height: 30px;
+        }
+    }
