@@ -1,0 +1,132 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+/*Header*/
+    .header{
+        background: black;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+        .menu{
+            background: rgb(45, 64, 89);
+            display: flex;
+            flex-flow: row nowrap;
+            margin-bottom: 0.5px;
+        }
+            .logo{
+                background: rgb(234, 84, 85);
+                flex: 1 1 auto;
+            }
+            .nav{
+                background: rgb(234, 84, 85);
+                flex: 5 1 auto;
+            }
+            .social{
+                background: rgb(234, 84, 85);
+                flex: 1 1 auto;
+            }
+        .texto-principal{
+            background: rgb(240, 123,63);
+        }    
+            h1{
+                background: rgb(254,212,96);
+            }
+/*Section*/
+    .section{
+        background: black;
+        display: flex;
+    }
+        .articulos{
+            background: rgb(78, 78, 106);
+            display: flex;
+            flex-flow: row wrap;
+            flex: 2 1 auto;
+        }
+            .article{
+                background: rgb(31, 108, 176);
+                flex: 1 1 40%;
+            }
+            .navegacion{
+                background: rgb(112, 163, 196);
+                flex: 1 1 100%;
+            }
+        aside{
+            background: rgb(247, 63, 82);
+            flex: 1 1 auto;
+            display: flex;
+            flex-flow: column wrap;
+        }
+            .publicidad{
+                background: rgb(254, 234, 133);
+            }
+/*Footer*/
+    footer{
+        background: black;
+    }
+        .pie{
+            background: rgb(230, 175, 46);
+        }
+
+/*Media Query tablet*/
+
+@media all and (max-width: 800px){
+    .section{
+        background: rgb(254, 255, 3);
+        flex-flow: column nowrap;
+    }
+}
+
+/*Media Query Telefono*/
+
+@media all and (max-width: 480px){
+    .menu{
+        height: 100px;
+        align-items: center;
+    }
+        .logo{
+            height: 30px;
+        }
+        .nav{
+            height: 30px;
+        }
+        .social{
+            height: 30px;
+        }
+    .texto-principal{
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+        h1{
+            height: 30px;
+        }
+    .section{
+        height: 450px;
+    }
+        .articulos{
+            align-items: center;
+        }
+            .article{
+                height: 30px;
+            }
+            .navegacion{
+                height: 30px;
+            }
+        .publicidad{
+            height: 30px;
+            flex: 1 1 auto;
+        }
+        footer{
+            height: 70px;
+        }
+        .pie{
+            height: 30px;
+        }
+    }
