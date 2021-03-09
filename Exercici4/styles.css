@@ -3,18 +3,23 @@
     padding: 10px;
     box-sizing: border-box;
 }
+
+q{
+  quotes: "“" "”" "«" "»";
+}
+
 .padre{
     display: flex;
     flex-flow: column nowrap;
 }
 /*Header*/
     .header{
-        background: black;
+        background: url(img/fons.jpg);
         display: flex;
         flex-flow: column nowrap;
     }
         .menu{
-            background: rgb(45, 64, 89);
+            background: black;
             display: flex;
             flex-flow: row nowrap;
             margin-bottom: 0.5px;
@@ -33,6 +38,7 @@
             }
         .texto-principal{
             background: rgb(240, 123,63);
+            font-family: 'Times New Roman', Times, serif;
         }    
             h1{
                 background: rgb(254,212,96);
