@@ -1,54 +1,182 @@
-*{
-    margin: 10px;
-    padding: 10px;
-    box-sizing: border-box;
+/*RESERT*/
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,b, u, i, center,
+dl, dt, dd, ol, ul, li,fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
 }
 
+html {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+q, blockquote {
+    quotes: none;
+}
+
+    q:before, q:after, blockquote:before, blockquote:after {
+        content: "";
+        content: none;
+    }
+
+a img {
+    border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary 
+{
+    display: block;
+}
+
+*{ box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
 q{
   quotes: "“" "”" "«" "»";
 }
 
-.padre{
+html, body {
+    height: 100vh;
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.padre{
+    height: 95%;
+    width: 97%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
 /*Header*/
     .header{
-        background: url(img/fons.jpg);
+        height: 35%;
+        width: 100%;
+        background: url(img/fonsm.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         display: flex;
         flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
     }
         .menu{
-            background: black;
+            height: 37%;
+            width: 97%;
             display: flex;
-            flex-flow: row nowrap;
-            margin-bottom: 0.5px;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
         }
             .logo{
-                background: rgb(234, 84, 85);
+                height: 80%;
                 flex: 1 1 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
+                .logo img{
+                    height: 100%;
+                }
             .nav{
-                background: rgb(234, 84, 85);
-                flex: 5 1 auto;
+                height: 80%;
+                flex: 6 1 auto;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: flex-start;
+                align-items: center;
             }
+                .agrupa{
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: flex-start;
+                    align-items: center;
+                }
+                    .agrupa li{
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: space-around;
+                        align-items: center;
+
+                    }
+                        .nav a{
+                            letter-spacing: 0.1em;
+                            color: grey;
+                        }
+                        .nav a i{
+                        }
+                        .nav:hover{
+                            color:rgb(177, 74, 37);
+                        }
             .social{
-                background: rgb(234, 84, 85);
+                height: 80%;
                 flex: 1 1 auto;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-items: flex-start;
             }
+                .social a{
+                    height: 100%;
+                    flex: 1 1 auto;
+                    color: grey;
+                    padding: 0 auto;
+                }
+                .social a:hover{
+                    color:rgb(177, 74, 37);
+                }
+
         .texto-principal{
-            background: rgb(240, 123,63);
+            height: 37%;
+            width: 97%;
+            background: rgba(0,0,0,.1);
             font-family: 'Times New Roman', Times, serif;
         }    
             h1{
-                background: rgb(254,212,96);
+                height: 80%;
+                background: ;
             }
 /*Section*/
     .section{
+        height: 60%;
+        width:100%;
         background: black;
         display: flex;
     }
         .articulos{
+            height: 80%;
             background: rgb(78, 78, 106);
             display: flex;
             flex-flow: row wrap;
@@ -63,6 +191,7 @@ q{
                 flex: 1 1 100%;
             }
         aside{
+            height: 80%;
             background: rgb(247, 63, 82);
             flex: 1 1 auto;
             display: flex;
@@ -73,9 +202,12 @@ q{
             }
 /*Footer*/
     footer{
+        height: 13%;
+        width: 100%;
         background: black;
     }
         .pie{
+            height: 80%;
             background: rgb(230, 175, 46);
         }
 
