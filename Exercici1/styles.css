@@ -1,53 +1,140 @@
+/*Reset*/
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,b, u, i, center,
+dl, dt, dd, ol, ul, li,fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,menu, nav, output, ruby, section, summary,
+time, mark, audio, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html{
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption, th, td{
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+q, blockquote{
+    quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after{
+    content: "";
+    content: none;
+}
+
+a img{
+    border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary{
+    display: block;
+}
+
 *{
-    margin: 10px;
-    padding: 10px;
     box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 .padre{
     display: flex;
     flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 95%;
+    width: 97%;
 }
 /*Header*/
     .header{
         background: black;
         display: flex;
         flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+        height: 35%;
+        width: 100%;
     }
         .menu{
             background: rgb(45, 64, 89);
             display: flex;
             flex-flow: row nowrap;
-            margin-bottom: 0.5px;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 37%;
+            width: 97%;
         }
             .logo{
                 background: rgb(234, 84, 85);
-                flex: 1 1 auto;
+                height: 35%;
+                width: 10%;
             }
             .nav{
                 background: rgb(234, 84, 85);
-                flex: 5 1 auto;
+                height: 35%;
+                width: 60%;
             }
             .social{
                 background: rgb(234, 84, 85);
-                flex: 1 1 auto;
+                height: 35%;
+                width: 10%;
             }
         .texto-principal{
             background: rgb(240, 123,63);
+            height: 37%;
+            width: 97%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
         }    
             h1{
                 background: rgb(254,212,96);
+                height: 35%;
+                width: 97%;
             }
 /*Section*/
     .section{
         background: black;
         display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 50%;
+        width: 100%;
     }
         .articulos{
             background: rgb(78, 78, 106);
-            flex: 2 1 auto;
+            width: 56.60%;
             display: flex;
             flex-flow: row wrap;
-
+            height: 80%;
         }
             .article{
                 background: rgb(31, 108, 176);
@@ -58,16 +145,27 @@
                 flex: 1 1 100%;
             }
         aside{
+            height:80%;
             background: rgb(247, 63, 82);
-            flex: 1 1 auto;
+            width: 28.30%;
+            display: flex;
+            flex-flow: column wrap;
         }
             .publicidad{
                 background: rgb(254, 234, 133);
             }
 /*Footer*/
     footer{
+        height: 10%;
+        width: 100%;
         background: black;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
     }
         .pie{
+            height: 80%;
+            width: 97%;
             background: rgb(230, 175, 46);
         }
