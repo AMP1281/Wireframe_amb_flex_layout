@@ -76,9 +76,9 @@ body{
         background: black;
         display: flex;
         flex-flow: column nowrap;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
-        height: 35%;
+        height: 30%;
         width: 100%;
     }
         .menu{
@@ -87,27 +87,35 @@ body{
             flex-flow: row nowrap;
             justify-content: space-evenly;
             align-items: center;
-            height: 37%;
+            height: 33.33%;
             width: 97%;
         }
-            .logo{
-                background: rgb(234, 84, 85);
-                height: 35%;
-                width: 10%;
+            .mcentrar{
+                height: 33.33%;
+                width: 97%;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                align-items: center;
             }
-            .nav{
-                background: rgb(234, 84, 85);
-                height: 35%;
-                width: 60%;
-            }
-            .social{
-                background: rgb(234, 84, 85);
-                height: 35%;
-                width: 10%;
-            }
+                .logo{
+                    background: rgb(234, 84, 85);
+                    height: 100%;
+                    width: 13.5%;
+                }
+                .nav{
+                    background: rgb(234, 84, 85);
+                    height: 100%;
+                    width: 70%;
+                }
+                .social{
+                    background: rgb(234, 84, 85);
+                    height: 100%;
+                    width: 13.5%;
+                }
         .texto-principal{
             background: rgb(240, 123,63);
-            height: 37%;
+            height: 33.33%;
             width: 97%;
             display: flex;
             flex-flow: column nowrap;
@@ -131,7 +139,7 @@ body{
     }
         .articulos{
             background: rgb(78, 78, 106);
-            width: 56.60%;
+            width: 60.50%;
             display: flex;
             flex-flow: row wrap;
             height: 80%;
@@ -147,7 +155,7 @@ body{
         aside{
             height:80%;
             background: rgb(247, 63, 82);
-            width: 28.30%;
+            width: 32%;
             display: flex;
             flex-flow: column wrap;
         }
@@ -165,7 +173,7 @@ body{
         align-items: center;
     }
         .pie{
-            height: 80%;
+            height: 33.33%;
             width: 97%;
             background: rgb(230, 175, 46);
         }
