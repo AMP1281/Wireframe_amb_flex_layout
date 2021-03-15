@@ -155,7 +155,7 @@ body{
         }
             .articulos{
                 background: rgb(78, 78, 106);
-                width: 586px;
+                /*width: 586px;*/
                 flex: 2 1 auto;
                 height: 100%;
                 display: flex;
@@ -187,7 +187,7 @@ body{
                 height:100%;
                 background: rgb(247, 63, 82);
                 margin-left: 2%;
-                width: 359px;
+                /*width: 359px;*/
                 flex: 1 1 auto;
                 display: flex;
                 flex-flow: column wrap;
@@ -231,3 +231,42 @@ body{
             width: 97%;
             background: rgb(230, 175, 46);
         }
+/*Media*/
+@media(max-width: 1025px){
+    .header{
+        height: 30%;
+    }
+    .section{
+        background: rgb(254, 255, 3);
+        height: 52.50%;
+    }
+        .scentrar{
+            height: 86.60%;
+            align-content: space-around;
+        }
+        .articulos{
+            height: 50%;
+            width: 100%;
+        }
+            .acentrar{
+                height: 72%;
+            }
+        aside{
+            height: 33.33%;
+            width: 100%;
+            margin-left: 0%;
+        }
+        .pcentrar{
+            width: 94%;
+            height: 52%;
+        }
+        .ppcentrar{
+            width: 100%;
+            height: 100%;
+        }
+    footer{
+        height:10.30%;
+    }
+
+
+}
