@@ -54,6 +54,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     box-sizing: border-box;
     text-decoration: none;
 }
+html{
+    height: 100vh;
+}
 
 body{
     height: 100vh;
@@ -266,5 +269,22 @@ body{
                     }
     footer{
         height:10.30%;
+    }
+}
+@media(max-width: 599px){
+    .hcentrar, .scentrar, .pie{
+        width: 86.95%;
+    }
+    .mcentrar, h1, .acentrar, .pcentrar{
+        width: 82.50%;
+    }
+    .logo, .social{
+        width: 19.67%;
+    }
+    .nav{
+        width: 49.18%;
+    }
+    .article{
+        width: 45%;
     }
 }
