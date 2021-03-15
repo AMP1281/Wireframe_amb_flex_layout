@@ -46,12 +46,10 @@ q, blockquote {
 a img {
     border: none;
 }
-
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary 
 {
     display: block;
 }
-
 *{ box-sizing: border-box;
 }
 a{
@@ -129,14 +127,13 @@ html, body {
                         flex-flow: row nowrap;
                         justify-content: space-around;
                         align-items: center;
-
                     }
                         .nav a{
                             letter-spacing: 0.1em;
                             color: grey;
                         }
-                        .nav a i{
-                        }
+                        /*.nav a i{
+                        }*/
                         .nav:hover{
                             color:rgb(177, 74, 37);
                         }
@@ -157,7 +154,6 @@ html, body {
                 .social a:hover{
                     color:rgb(177, 74, 37);
                 }
-
         .texto-principal{
             height: 37%;
             width: 97%;
@@ -166,7 +162,7 @@ html, body {
         }    
             h1{
                 height: 80%;
-                background: ;
+                background: black;
             }
 /*Section*/
     .section{
