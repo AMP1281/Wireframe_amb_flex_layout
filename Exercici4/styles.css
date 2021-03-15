@@ -77,7 +77,7 @@ html, body {
 }
 /*Header*/
     .header{
-        height: 35%;
+        height: 37.14%;
         width: 100%;
         background: url(img/fonsm.jpg);
         background-position: center;
@@ -85,19 +85,35 @@ html, body {
         background-size: cover;
         display: flex;
         flex-flow: column nowrap;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
     }
-        .menu{
-            height: 37%;
+        .hcentrar{
+            height: 80%;
             width: 97%;
             display: flex;
             flex-flow: row wrap;
             justify-content: space-between;
             align-items: center;
         }
+        .menu{
+            height: 47%;
+            width: 100%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .mcentrar{
+            height: 33.33%;
+            width: 97%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+        }
             .logo{
-                height: 80%;
+                height: 100%;
                 flex: 1 1 auto;
                 display: flex;
                 justify-content: center;
