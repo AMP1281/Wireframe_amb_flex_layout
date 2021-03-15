@@ -33,16 +33,6 @@ caption, th, td {
     font-weight: normal;
     vertical-align: middle;
 }
-
-q, blockquote {
-    quotes: none;
-}
-
-    q:before, q:after, blockquote:before, blockquote:after {
-        content: "";
-        content: none;
-    }
-
 a img {
     border: none;
 }
@@ -58,7 +48,6 @@ a{
 q{
   quotes: "“" "”" "«" "»";
 }
-
 html, body {
     height: 100vh;
     width: 100%;
@@ -96,90 +85,104 @@ html, body {
             justify-content: space-between;
             align-items: center;
         }
-        .menu{
-            height: 47%;
-            width: 100%;
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-        .mcentrar{
-            height: 33.33%;
-            width: 97%;
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-between;
-            align-items: center;
-        }
-            .logo{
-                height: 100%;
-                flex: 1 1 auto;
+            .menu{
+                height: 47%;
+                width: 100%;
                 display: flex;
-                justify-content: center;
+                flex-flow: row nowrap;
+                justify-content: space-evenly;
                 align-items: center;
-            }
-                .logo img{
-                    height: 100%;
-                }
-            .nav{
-                height: 80%;
-                flex: 6 1 auto;
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: flex-start;
-                align-items: center;
-            }
-                .agrupa{
-                    height: 100%;
-                    width: 100%;
+            }   
+                .mcentrar{
+                    height: 33.33%;
+                    width: 97%;
                     display: flex;
-                    flex-flow: row wrap;
-                    justify-content: flex-start;
+                    flex-flow: row nowrap;
+                    justify-content: space-between;
                     align-items: center;
                 }
-                    .agrupa li{
+                    .logo{
+                        height: 200%;
+                        flex: 1 1 auto;
                         display: flex;
-                        flex-flow: row nowrap;
-                        justify-content: space-around;
+                        justify-content: flex-start;
                         align-items: center;
                     }
-                        .nav a{
-                            letter-spacing: 0.1em;
-                            color: grey;
+                        .logo img{
+                            height: 100%;
                         }
-                        /*.nav a i{
-                        }*/
-                        .nav:hover{
-                            color:rgb(177, 74, 37);
+                    .nav{
+                        height: 100%;
+                        flex: 6 1 auto;
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: flex-start;
+                        align-items: center;
+                    }
+                    .nav a:hover{
+                        color:rgb(177, 74, 37);
+                    }
+                    .nav i:hover{
+                        color:rgb(177, 74, 37);
+                    }
+                        .agrupa{
+                            height: 100%;
+                            width: 65%;
+                            display: flex;
+                            flex-flow: row wrap;
+                            justify-content: space-between;
+                            align-items: center;
                         }
-            .social{
-                height: 80%;
-                flex: 1 1 auto;
-                display: flex;
-                flex-flow: column wrap;
-                justify-content: center;
-                align-items: flex-start;
-            }
-                .social a{
-                    height: 100%;
+                            .agrupa li{
+                                width: 15%;
+                                display: flex;
+                                flex-flow: row nowrap;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                                .nav a{
+                                    letter-spacing: 0.1em;
+                                    color: grey;
+                                    margin-left: 10%;
+                                }
+                .social{
+                    height: 200%;
                     flex: 1 1 auto;
-                    color: grey;
-                    padding: 0 auto;
+                    display: flex;
+                    flex-flow: column wrap;
+                    justify-content: space-between;
+                    align-items: center;
                 }
-                .social a:hover{
-                    color:rgb(177, 74, 37);
+                    .social a{
+                        flex: 1 1 auto;
+                        color: grey;
+                        padding: 0 auto;
+                    }
+                    .social a:hover{
+                        color:rgb(177, 74, 37);
+                    }
+            .texto-principal{
+                height: 47%;
+                width: 100%;
+                background: rgba(0,0,0,.1);
+                font-family: 'Times New Roman', Times, serif;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+            }    
+                h1{
+                    height: 35%;
+                    width: 97%;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: bolder;
+                    font-size: 1.7em;
+                    color: rgba(245, 107, 130,.7);
+                    letter-spacing: 0.10em;
                 }
-        .texto-principal{
-            height: 37%;
-            width: 97%;
-            background: rgba(0,0,0,.1);
-            font-family: 'Times New Roman', Times, serif;
-        }    
-            h1{
-                height: 80%;
-                background: black;
-            }
 /*Section*/
     .section{
         height: 60%;
