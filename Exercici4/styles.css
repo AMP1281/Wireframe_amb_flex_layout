@@ -211,60 +211,57 @@ html, body {
             background: rgb(230, 175, 46);
         }
 
-/*Media Query tablet*/
-
-@media all and (max-width: 800px){
+/*Media*/
+@media(max-width: 1025px){
+    .header{
+        height: 30%;
+    }
     .section{
         background: rgb(254, 255, 3);
-        flex-flow: column nowrap;
+        height: 52.50%;
+    }
+        .scentrar{
+            height: 86.60%;
+            align-content: space-around;
+        }
+            .articulos{
+                height: 50%;
+                width: 100%;
+            }
+                .acentrar{
+                    height: 72%;
+                }
+            aside{
+                height: 33.33%;
+                width: 100%;
+                margin-left: 0%;
+            }
+                .pcentrar{
+                    width: 94%;
+                    height: 52%;
+                }
+                    .ppcentrar{
+                    width: 100%;
+                    height: 100%;
+                    }
+    footer{
+        height:10.30%;
     }
 }
-
-/*Media Query Telefono*/
-
-@media all and (max-width: 480px){
-    .menu{
-        height: 100px;
-        align-items: center;
+@media(max-width: 599px){
+    .hcentrar, .scentrar, .pie{
+        width: 86.95%;
     }
-        .logo{
-            height: 30px;
-        }
-        .nav{
-            height: 30px;
-        }
-        .social{
-            height: 30px;
-        }
-    .texto-principal{
-        height: 100px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    .mcentrar, h1, .acentrar, .pcentrar{
+        width: 82.50%;
     }
-        h1{
-            height: 30px;
-        }
-    .section{
-        height: 450px;
+    .logo, .social{
+        width: 19.67%;
     }
-        .articulos{
-            align-items: center;
-        }
-            .article{
-                height: 30px;
-            }
-            .navegacion{
-                height: 30px;
-            }
-        .publicidad{
-            height: 30px;
-            flex: 1 1 auto;
-        }
-        footer{
-            height: 70px;
-        }
-        .pie{
-            height: 30px;
-        }
+    .nav{
+        width: 49.18%;
     }
+    .article{
+        width: 45%;
+    }
+}
