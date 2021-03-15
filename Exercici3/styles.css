@@ -1,132 +1,270 @@
+/*Reset*/
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,b, u, i, center,
+dl, dt, dd, ol, ul, li,fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,menu, nav, output, ruby, section, summary,
+time, mark, audio, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html{
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption, th, td{
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+q, blockquote{
+    quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after{
+    content: "";
+    content: none;
+}
+
+a img{
+    border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary{
+    display: block;
+}
+
 *{
-    margin: 10px;
-    padding: 10px;
     box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 .padre{
     display: flex;
     flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 95%;
+    width: 97%;
 }
 /*Header*/
     .header{
         background: black;
         display: flex;
         flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 37.14%;
+        width: 100%;
     }
-        .menu{
-            background: rgb(45, 64, 89);
+        .hcentrar{
+            height: 80%;
+            width: 97%;
             display: flex;
-            flex-flow: row nowrap;
-            margin-bottom: 0.5px;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
         }
-            .logo{
-                background: rgb(234, 84, 85);
-                flex: 1 1 auto;
+            .menu{
+                background: rgb(45, 64, 89);
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-evenly;
+                align-items: center;
+                height: 47%;
+                width: 100%;
             }
-            .nav{
-                background: rgb(234, 84, 85);
-                flex: 5 1 auto;
-            }
-            .social{
-                background: rgb(234, 84, 85);
-                flex: 1 1 auto;
-            }
-        .texto-principal{
-            background: rgb(240, 123,63);
-        }    
-            h1{
-                background: rgb(254,212,96);
-            }
+                .mcentrar{
+                    height: 33.33%;
+                    width: 97%;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                    .logo{
+                        background: rgb(234, 84, 85);
+                        height: 100%;
+                        width: 13.5%;
+                    }
+                    .nav{
+                        background: rgb(234, 84, 85);
+                        height: 100%;
+                        width: 70%;
+                    }
+                    .social{
+                        background: rgb(234, 84, 85);
+                        height: 100%;
+                        width: 13.5%;
+                    }
+            .texto-principal{
+                background: rgb(240, 123,63);
+                height: 47%;
+                width: 100%;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+            }    
+                h1{
+                    background: rgb(254,212,96);
+                    height: 35%;
+                    width: 97%;
+                }
 /*Section*/
     .section{
         background: black;
         display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 40%;
+        width: 100%;
     }
-        .articulos{
-            background: rgb(78, 78, 106);
+        .scentrar{
+            width: 97%;
+            height: 78%;
             display: flex;
             flex-flow: row wrap;
-            flex: 2 1 auto;
-        }
-            .article{
-                background: rgb(31, 108, 176);
-                flex: 1 1 40%;
-            }
-            .navegacion{
-                background: rgb(112, 163, 196);
-                flex: 1 1 100%;
-            }
-        aside{
-            background: rgb(247, 63, 82);
-            flex: 1 1 auto;
-            display: flex;
-            flex-flow: column wrap;
-        }
-            .publicidad{
-                background: rgb(254, 234, 133);
-            }
-/*Footer*/
-    footer{
-        background: black;
-    }
-        .pie{
-            background: rgb(230, 175, 46);
-        }
-
-/*Media Query tablet*/
-
-@media all and (max-width: 800px){
-    .section{
-        background: rgb(254, 255, 3);
-        flex-flow: column nowrap;
-    }
-}
-
-/*Media Query Telefono*/
-
-@media all and (max-width: 480px){
-    .menu{
-        height: 100px;
-        align-items: center;
-    }
-        .logo{
-            height: 30px;
-        }
-        .nav{
-            height: 30px;
-        }
-        .social{
-            height: 30px;
-        }
-    .texto-principal{
-        height: 100px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-        h1{
-            height: 30px;
-        }
-    .section{
-        height: 450px;
-    }
-        .articulos{
+            justify-content: space-between;
             align-items: center;
         }
-            .article{
-                height: 30px;
+            .articulos{
+                background: rgb(78, 78, 106);
+                /*width: 586px;*/
+                flex: 2 1 auto;
+                height: 100%;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
             }
-            .navegacion{
-                height: 30px;
+                .acentrar{
+                    height: 72%;
+                    width: 94%;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                    align-content: space-between;
+                }
+                    .article{
+                        background: rgb(31, 108, 176);
+                        width: 49%;
+                        height: 25%;
+                        flex-grow: 1 1 45%;
+                    }
+                    .navegacion{
+                        background: rgb(112, 163, 196);
+                        width: 100%;
+                        height: 25%;
+                        flex-grow: 1 1 100%;
+                    }
+            aside{
+                height:100%;
+                background: rgb(247, 63, 82);
+                margin-left: 2%;
+                /*width: 359px;*/
+                flex: 1 1 auto;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-items: center;
             }
-        .publicidad{
-            height: 30px;
-            flex: 1 1 auto;
-        }
-        footer{
-            height: 70px;
-        }
-        .pie{
-            height: 30px;
-        }
+                .pcentrar{
+                    height: 78%;
+                    width: 88%;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: flex-start;
+                    align-content: flex-start;
+                }
+                    .ppcentrar{
+                        width: 100%;
+                        height: 50%;
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: space-between;
+                        align-content: space-between;
+                    }
+                        .publicidad{
+                            background: rgb(254, 234, 133);
+                            height: 37.5%;
+                            width: 100%;
+                            flex-grow: 1 1 100%;
+                    }
+/*Footer*/
+    footer{
+        height: 14%;
+        width: 100%;
+        background: black;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
     }
+        .pie{
+            height: 33.33%;
+            width: 97%;
+            background: rgb(230, 175, 46);
+        }
+/*Media*/
+@media(max-width: 1025px){
+    .header{
+        height: 30%;
+    }
+    .section{
+        background: rgb(254, 255, 3);
+        height: 52.50%;
+    }
+        .scentrar{
+            height: 86.60%;
+            align-content: space-around;
+        }
+            .articulos{
+                height: 50%;
+                width: 100%;
+            }
+                .acentrar{
+                    height: 72%;
+                }
+            aside{
+                height: 33.33%;
+                width: 100%;
+                margin-left: 0%;
+            }
+                .pcentrar{
+                    width: 94%;
+                    height: 52%;
+                }
+                    .ppcentrar{
+                    width: 100%;
+                    height: 100%;
+                    }
+    footer{
+        height:10.30%;
+    }
+}
