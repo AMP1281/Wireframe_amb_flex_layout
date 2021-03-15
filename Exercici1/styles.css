@@ -155,7 +155,8 @@ body{
         }
             .articulos{
                 background: rgb(78, 78, 106);
-                width: 68%;
+                width: 586px;
+                flex: 2 1 auto;
                 height: 100%;
                 display: flex;
                 flex-flow: row wrap;
@@ -185,7 +186,9 @@ body{
             aside{
                 height:100%;
                 background: rgb(247, 63, 82);
-                width: 30%;
+                margin-left: 2%;
+                width: 359px;
+                flex: 1 1 auto;
                 display: flex;
                 flex-flow: column wrap;
                 justify-content: center;
