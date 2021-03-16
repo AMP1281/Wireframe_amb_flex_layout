@@ -49,7 +49,7 @@ q{
   quotes: "“" "”" "«" "»";
 }
 html, body {
-    height: 100vh;
+    height: 150vh;
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
@@ -91,7 +91,7 @@ html, body {
                 align-items: center;
             }   
                 .mcentrar{
-                    height: 100%;
+                    height: 98%;
                     width: 97%;
                     display: flex;
                     flex-flow: row nowrap;
@@ -99,7 +99,7 @@ html, body {
                     align-items: center;
                 }
                     .logo{
-                        height: 120%;
+                        height: 100%;
                         flex: 1 1 auto;
                         display: flex;
                         justify-content: center;
@@ -139,6 +139,7 @@ html, body {
                                 width: 80px;
                             }
                                 .nav a{
+                                    font-family: 'Roboto', sans-serif;
                                     letter-spacing: 0.1em;
                                     color: grey;
                                     margin-left: 10%;
@@ -146,10 +147,10 @@ html, body {
                 .social{
                     height: 100%;
                     display: flex;
-                    flex-flow: column wrap;
+                    flex-flow: row wrap;
                     justify-content: space-evenly;
                     align-items: center;
-                    flex: 1 1 auto;
+                    flex: 2 1 auto;
                 }
                     .social a{
                         color: grey;
@@ -186,16 +187,18 @@ html, body {
                 }
 /*Section*/
 .section{
-    background: white;
+    background: rgb(224,226,228);
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
     height: 68.21%;
     width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
 }
     .scentrar{
-        width: 98%;
+        width: 99%;
         height: 98%;
         display: flex;
         flex-flow: row wrap;
@@ -203,12 +206,11 @@ html, body {
         align-items: center;
     }
         .articulos{
-            background: rgb(78, 78, 106);
             width: 79%;
             height: 100%;
             display: flex;
             flex-flow: row wrap;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
         }
             .acentrar{
@@ -219,122 +221,217 @@ html, body {
                 justify-content: space-between;
                 align-content: space-between;
             }
-                .article{;
+                .article{
                     width: 49%;
-                    height: 45%;
-                    flex-grow: 1 1 45%;
+                    height: 47.5%;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: flex-start;
+                    align-items: flex-start;
                 }
                     .fechauno{
                         background: url(img/fechauno.jpg);
-                        size: 100% 100%;
+                        background-size: 100% 100%;
+                        height: 70%;
+                        width: 100%;
+                        display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: flex-end;
+                        color: white;
+                        font-weight: bold;
+                    }
+                    .fechauno p{
+                        padding-left: 2%;
+                        line-height: 9px;
                     }
                     .fechados{
                         background: url(img/fechados.jpg);
-                        size: 100% 100%;
+                        background-size: 100% 100%;
+                        height: 70%;
+                        width: 100%;
+                        display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: flex-end;
+                        color: white;
+                        font-weight: bold;
+                    }
+                    .fechados p{
+                        padding-left: 2%;
+                        line-height: 9px;
                     }
                     .fechatres{
                         background: url(img/fechatres.jpg);
-                        size: 100% 100%;
+                        background-size: 100% 100%;
+                        height: 70%;
+                        width: 100%;
+                        display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: flex-end;
+                        color: white;
+                        font-weight: bold;
+                    }
+                    .fechatres p{
+                        padding-left: 2%;
+                        line-height: 9px;
                     }
                     .fechaquatro{
                         background: url(img/fechaquatro.jpg);
-                        size: 100% 100%;
+                        background-size: 100% 100%;
+                        height: 70%;
+                        width: 100%;
+                        display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: flex-end;
+                        color: white;
+                        font-weight: bold;
+                    }.fechaquatro p{
+                        padding-left: 2%;
+                        line-height: 9px;
+                    }
+                    .tema{
+                        background:rgb(247, 63, 82);
+                        color:rgb(224,226,228);
+                        font-weight:bolder;
+                        letter-spacing: 0.1em;
+                        height: 7%;
+                        width: 100%;
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: flex-start;
+                        align-items: flex-end;
+                        padding-left: 2%;
+                        line-height: 8px;
+                    }
+                    .texto{
+                        height: 15%;
+                        width: 100%;
+                        padding: 2%;
+                    }
+                    .btn{
+                        height: 5%;
+                        width: 100%;
+                        cursor: pointer;
+                        color: black;
+                        display: flex;
+                        align-items: center;
+                        padding: 2%;
                     }
                 .navegacion{
-                    background: rgb(112, 163, 196);
+                    background:rgb(247, 63, 82);
                     width: 100%;
-                    height: 5%;
-                    flex-grow: 1 1 100%;
+                    height: 4%;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                 }
         aside{
             height:100%;
-            background: rgb(247, 63, 82);
-            width: 19%;
+            width: 20%;
             display: flex;
             flex-flow: column wrap;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
         }
             .pcentrar{
                 height: 78%;
-                width: 88%;
+                width: 95%;
                 display: flex;
-                flex-flow: row wrap;
+                flex-flow: column wrap;
                 justify-content: flex-start;
-                align-content: flex-start;
+                align-content: center;
             }
                 .ppcentrar{
                     width: 100%;
-                    height: 50%;
+                    height: 35%;
                     display: flex;
                     flex-flow: row wrap;
                     justify-content: space-between;
                     align-content: space-between;
                 }
                     .publicidad{
-                        background: rgb(254, 234, 133);
-                        height: 37.5%;
+                        background: rgb(126,74,53);
+                        height: 45%;
                         width: 100%;
-                        flex-grow: 1 1 100%;
+                        color: white;
+                        text-align: center;
                 }
 /*Footer*/
 footer{
     height: 4.63%;
     width: 100%;
-    background: black;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    border: 10px black;
 }
     .pie{
-        height: 33.33%;
-        width: 97%;
-        background: rgb(230, 175, 46);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
     }
+
 /*Media*/
 @media(max-width: 1025px){
-.header{
-    height: 30%;
-}
 .section{
-    background: rgb(254, 255, 3);
-    height: 52.50%;
+    background:rgb(224,226,228);
+    height: 70.84%;
 }
     .scentrar{
-        height: 86.60%;
+        height: 99%;
         align-content: space-around;
     }
         .articulos{
-            height: 50%;
+            height: 89%;
             width: 100%;
         }
             .acentrar{
-                height: 72%;
+                height: 100%;
             }
         aside{
-            height: 33.33%;
+            height: 9%;
             width: 100%;
             margin-left: 0%;
         }
             .pcentrar{
-                width: 94%;
-                height: 52%;
+                width: 100%;
+                height: 95%;
             }
                 .ppcentrar{
                 width: 100%;
-                height: 100%;
+                height: 95%;
+                }
+                .publicidad{
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: center;
+                    align-content: center;
                 }
 footer{
-    height:10.30%;
+    height:2%;
 }
 }
 
 @media(max-width: 599px){
-.hcentrar, .scentrar, .pie{
+    body{
+        background: red;
+    }
+.menu{
+    height: 29%;
+}
+.texto-principal{
+    height: 69%;
+}
+.hcentrar,.section, .pie{
     width: 86.95%;
 }
-.mcentrar, h1, .acentrar, .pcentrar{
+.mcentrar, h1{
     width: 82.50%;
 }
 .logo, .social{
@@ -344,12 +441,18 @@ footer{
     width: 49.18%;
 }
 .article{
-    width: 45%;
+    width: 49%;
 }
 .agrupa{
     width: 100%;
 }
 h1{
     font-size: 1.5em;
+}
+.fechauno, .fechados, .fechatres, .fechaquatro{
+    height: 60%;
+}
+.texto{
+    height: 25%;
 }
 }
