@@ -94,7 +94,7 @@ html, body {
                 align-items: center;
             }   
                 .mcentrar{
-                    height: 33.33%;
+                    height: 66.66%;
                     width: 97%;
                     display: flex;
                     flex-flow: row nowrap;
@@ -102,7 +102,7 @@ html, body {
                     align-items: center;
                 }
                     .logo{
-                        height: 200%;
+                        height: 100%;
                         flex: 1 1 auto;
                         display: flex;
                         justify-content: flex-start;
@@ -127,18 +127,19 @@ html, body {
                     }
                         .agrupa{
                             height: 100%;
-                            width: 65%;
+                            width: 80%;
                             display: flex;
                             flex-flow: row wrap;
-                            justify-content: space-between;
+                            justify-content: flex-start;
                             align-items: center;
                         }
                             .agrupa li{
-                                width: 15%;
                                 display: flex;
                                 flex-flow: row nowrap;
                                 justify-content: center;
                                 align-items: center;
+                                flex: 1 1 auto;
+                                width: 80px;
                             }
                                 .nav a{
                                     letter-spacing: 0.1em;
@@ -146,15 +147,13 @@ html, body {
                                     margin-left: 10%;
                                 }
                 .social{
-                    height: 200%;
-                    flex: 1 1 auto;
+                    height: 100%;
                     display: flex;
                     flex-flow: column wrap;
-                    justify-content: space-between;
+                    justify-content: space-evenly;
                     align-items: center;
                 }
                     .social a{
-                        flex: 1 1 auto;
                         color: grey;
                         padding: 0 auto;
                     }
@@ -172,7 +171,7 @@ html, body {
                 align-items: center;
             }    
                 h1{
-                    height: 35%;
+                    height: 100%;
                     width: 97%;
                     display: flex;
                     flex-flow: row wrap;
@@ -182,101 +181,162 @@ html, body {
                     font-size: 1.7em;
                     color: rgba(245, 107, 130,.7);
                     letter-spacing: 0.10em;
+                    text-align: center;
                 }
 /*Section*/
-    .section{
-        height: 60%;
-        width:100%;
-        background: black;
+.section{
+    background: black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40%;
+    width: 100%;
+}
+    .scentrar{
+        width: 97%;
+        height: 78%;
         display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
     }
         .articulos{
-            height: 80%;
             background: rgb(78, 78, 106);
+            /*width: 586px;*/
+            flex: 2 1 auto;
+            height: 100%;
             display: flex;
             flex-flow: row wrap;
-            flex: 2 1 auto;
+            justify-content: center;
+            align-items: center;
         }
-            .article{
-                background: rgb(31, 108, 176);
-                flex: 1 1 40%;
+            .acentrar{
+                height: 72%;
+                width: 94%;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                align-content: space-between;
             }
-            .navegacion{
-                background: rgb(112, 163, 196);
-                flex: 1 1 100%;
-            }
+                .article{
+                    background: rgb(31, 108, 176);
+                    width: 49%;
+                    height: 25%;
+                    flex-grow: 1 1 45%;
+                }
+                .navegacion{
+                    background: rgb(112, 163, 196);
+                    width: 100%;
+                    height: 25%;
+                    flex-grow: 1 1 100%;
+                }
         aside{
-            height: 80%;
+            height:100%;
             background: rgb(247, 63, 82);
+            margin-left: 2%;
+            /*width: 359px;*/
             flex: 1 1 auto;
             display: flex;
             flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
         }
-            .publicidad{
-                background: rgb(254, 234, 133);
+            .pcentrar{
+                height: 78%;
+                width: 88%;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: flex-start;
+                align-content: flex-start;
             }
+                .ppcentrar{
+                    width: 100%;
+                    height: 50%;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                    align-content: space-between;
+                }
+                    .publicidad{
+                        background: rgb(254, 234, 133);
+                        height: 37.5%;
+                        width: 100%;
+                        flex-grow: 1 1 100%;
+                }
 /*Footer*/
-    footer{
-        height: 13%;
-        width: 100%;
-        background: black;
+footer{
+    height: 14%;
+    width: 100%;
+    background: black;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+    .pie{
+        height: 33.33%;
+        width: 97%;
+        background: rgb(230, 175, 46);
     }
-        .pie{
-            height: 80%;
-            background: rgb(230, 175, 46);
-        }
-
 /*Media*/
 @media(max-width: 1025px){
-    .header{
-        height: 30%;
-    }
-    .section{
-        background: rgb(254, 255, 3);
-        height: 52.50%;
-    }
-        .scentrar{
-            height: 86.60%;
-            align-content: space-around;
-        }
-            .articulos{
-                height: 50%;
-                width: 100%;
-            }
-                .acentrar{
-                    height: 72%;
-                }
-            aside{
-                height: 33.33%;
-                width: 100%;
-                margin-left: 0%;
-            }
-                .pcentrar{
-                    width: 94%;
-                    height: 52%;
-                }
-                    .ppcentrar{
-                    width: 100%;
-                    height: 100%;
-                    }
-    footer{
-        height:10.30%;
-    }
+.header{
+    height: 30%;
 }
+.section{
+    background: rgb(254, 255, 3);
+    height: 52.50%;
+}
+    .scentrar{
+        height: 86.60%;
+        align-content: space-around;
+    }
+        .articulos{
+            height: 50%;
+            width: 100%;
+        }
+            .acentrar{
+                height: 72%;
+            }
+        aside{
+            height: 33.33%;
+            width: 100%;
+            margin-left: 0%;
+        }
+            .pcentrar{
+                width: 94%;
+                height: 52%;
+            }
+                .ppcentrar{
+                width: 100%;
+                height: 100%;
+                }
+footer{
+    height:10.30%;
+}
+}
+
 @media(max-width: 599px){
-    .hcentrar, .scentrar, .pie{
-        width: 86.95%;
-    }
-    .mcentrar, h1, .acentrar, .pcentrar{
-        width: 82.50%;
-    }
-    .logo, .social{
-        width: 19.67%;
-    }
-    .nav{
-        width: 49.18%;
-    }
-    .article{
-        width: 45%;
-    }
+.hcentrar, .scentrar, .pie{
+    width: 86.95%;
+}
+.mcentrar, h1, .acentrar, .pcentrar{
+    width: 82.50%;
+}
+.logo, .social{
+    width: 19.67%;
+}
+.nav{
+    width: 49.18%;
+}
+.article{
+    width: 45%;
+}
+.agrupa{
+    width: 100%;
+}
+h1{
+    font-size: 1.5em;
+}
 }
