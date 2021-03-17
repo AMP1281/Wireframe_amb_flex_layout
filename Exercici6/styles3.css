@@ -1,0 +1,492 @@
+/*RESERT*/
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,b, u, i, center,
+dl, dt, dd, ol, ul, li,fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+a img {
+    border: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary 
+{
+    display: block;
+}
+*{box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+q{
+  quotes: "“" "”" "«" "»";
+}
+html, body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background: rgb(254, 251, 216);
+}
+
+
+.padre{
+    height: 95%;
+    width: 97%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Header*/
+    .header{
+        height: 25.82%;
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+        .hcentrar{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+            .menu{
+                height: 15.38%;
+                width: 100%;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-evenly;
+                align-items: center;
+            }   
+                .mcentrar{
+                    height: 98%;
+                    width: 97%;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                    .logo{
+                        height: 100%;
+                        flex: 1 1 auto;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                        .logo img{
+                            height: 100%;
+                        }
+                    .nav{
+                        height: 100%;
+                        flex: 6 1 auto;
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: flex-start;
+                        align-items: center;
+                    }
+                    .nav a:hover{
+                        color:rgb(177, 74, 37);
+                    }
+                    .nav i:hover{
+                        color:rgb(177, 74, 37);
+                    }
+                        .agrupa{
+                            height: 100%;
+                            width: 80%;
+                            display: flex;
+                            flex-flow: row wrap;
+                            justify-content: flex-start;
+                            align-items: center;
+                        }
+                            .agrupa li{
+                                display: flex;
+                                flex-flow: row nowrap;
+                                justify-content: center;
+                                align-items: center;
+                                flex: 1 1 auto;
+                                width: 80px;
+                            }
+                                .nav a{
+                                    font-family: 'Roboto', sans-serif;
+                                    letter-spacing: 0.1em;
+                                    color: grey;
+                                    margin-left: 10%;
+                                }
+                .social{
+                    height: 100%;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    flex: 2 1 auto;
+                }
+                    .social a{
+                        color: grey;
+                        padding: 0 auto;
+                    }
+                    .social a:hover{
+                        color:rgb(177, 74, 37);
+                    }
+            .texto-principal{
+                height: 84.61%;
+                width: 100%;
+                background: url(img/fonsm.jpg);
+                background-position:unset;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                font-family: 'Times New Roman', Times, serif;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+            }    
+                h1{
+                    height: 100%;
+                    width: 97%;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: bolder;
+                    font-size: 1.7em;
+                    color: rgba(245, 107, 130,.7);
+                    letter-spacing: 0.10em;
+                    text-align: center;
+                }
+/*Section*/
+.section{
+    background: rgb(224,226,228);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 68.21%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+    .scentrar{
+        width: 99%;
+        height: 98%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+        .articulos{
+            width: 79%;
+            height: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+            .acentrar{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                align-content: space-between;
+            }
+                .article{
+                    width: 49%;
+                    height: 47.5%;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    border: 0.5px solid rgb(247, 63, 82);
+                }
+                    .fechauno{
+                        background: url(img/fechauno.jpg);
+                        background-size: 100% 100%;
+                        height: 70%;
+                        width: 100%;
+                        display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: flex-end;
+                        color: white;
+                        font-weight: bold;
+                    }
+                    .fechauno p{
+                        padding-left: 2%;
+                        line-height: 9px;
+                    }
+                    .fechados{
+                        background: url(img/fechados.jpg);
+                        background-size: 100% 100%;
+                        height: 70%;
+                        width: 100%;
+                        display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: flex-end;
+                        color: white;
+                        font-weight: bold;
+                    }
+                    .fechados p{
+                        padding-left: 2%;
+                        line-height: 9px;
+                    }
+                    .fechatres{
+                        background: url(img/fechatres.jpg);
+                        background-size: 100% 100%;
+                        height: 70%;
+                        width: 100%;
+                        display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: flex-end;
+                        color: white;
+                        font-weight: bold;
+                    }
+                    .fechatres p{
+                        padding-left: 2%;
+                        line-height: 9px;
+                    }
+                    .fechaquatro{
+                        background: url(img/fechaquatro.jpg);
+                        background-size: 100% 100%;
+                        height: 70%;
+                        width: 100%;
+                        display: flex;
+                        flex-flow: column nowrap;
+                        justify-content: flex-end;
+                        color: white;
+                        font-weight: bold;
+                    }.fechaquatro p{
+                        padding-left: 2%;
+                        line-height: 9px;
+                    }
+                    .tema{
+                        background:rgb(247, 63, 82);
+                        color:rgb(224,226,228);
+                        font-weight:bolder;
+                        letter-spacing: 0.1em;
+                        height: 7%;
+                        width: 100%;
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: flex-start;
+                        align-items: flex-end;
+                        padding-left: 2%;
+                        line-height: 8px;
+                    }
+                    .texto{
+                        height: 15%;
+                        width: 100%;
+                        padding: 2%;
+                    }
+                    .btn{
+                        height: 5%;
+                        width: 100%;
+                        cursor: pointer;
+                        color: black;
+                        display: flex;
+                        align-items: center;
+                        padding: 2%;
+                    }
+                .navegacion{
+                    background:rgb(247, 63, 82);
+                    width: 100%;
+                    height: 4%;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                }
+        aside{
+            height:100%;
+            width: 20%;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: flex-start;
+            align-items: center;
+        }
+            .pcentrar{
+                height: 78%;
+                width: 95%;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: flex-start;
+                align-content: center;
+            }
+                .ppcentrar{
+                    width: 100%;
+                    height: 35%;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                    align-content: space-between;
+                }
+                    .publicidad{
+                        background: rgb(126,74,53);
+                        height: 45%;
+                        width: 100%;
+                        color: white;
+                        text-align: center;
+                }
+/*Footer*/
+footer{
+    height: 4.63%;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    border: 10px black;
+}
+    .pie{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+/*Media*/
+@media(max-width: 1025px){
+.nav{
+    font-size: 0.9em;
+}
+.section{
+    background:rgb(224,226,228);
+    height: 70.84%;
+}
+    .scentrar{
+        height: 99%;
+        align-content: space-around;
+    }
+        .articulos{
+            height: 89%;
+            width: 100%;
+        }
+            .acentrar{
+                height: 100%;
+            }
+                .fechauno, .fechados, .fechatres, .fechaquatro{
+                    height: 65%;
+                }
+                .texto{
+                    height: 20%;
+                }
+        aside{
+            height: 9%;
+            width: 100%;
+            margin-left: 0%;
+        }
+            .pcentrar{
+                width: 100%;
+                height: 95%;
+            }
+                .ppcentrar{
+                width: 100%;
+                height: 95%;
+                }
+                .publicidad{
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: center;
+                    align-content: center;
+                }
+footer{
+    height:2%;
+}
+}
+
+@media(max-width: 599px){
+.header{
+    height: 22.82%;
+}
+.nav{
+    width: 49.18%;
+    font-size: 0.8em;
+}
+.navegacion{
+    height: 5%;
+}
+.menu{
+    height: 39%;
+}
+.texto-principal{
+    height: 59%;
+}
+.section{
+    height: 73.84%;
+}
+.hcentrar,.section, .pie{
+    width: 86.95%;
+}
+.mcentrar, h1{
+    width: 82.50%;
+}
+.logo, .social{
+    width: 19.67%;
+}
+.article{
+    width: 49%;
+}
+.agrupa{
+    width: 100%;
+}
+h1{
+    font-size: 1.5em;
+}
+.fechauno, .fechados, .fechatres, .fechaquatro{
+    height: 40%;
+}
+.texto{
+    height: 45%;
+    display: flex;
+    align-items: center;
+}
+.articulos{
+    height: 83%;
+}
+aside{
+    height: 15%;
+}
+.pcentrar, .ppcentrar{
+    height: 99%;
+}
+.publicidad{
+    height: 49%;
+}
+}
