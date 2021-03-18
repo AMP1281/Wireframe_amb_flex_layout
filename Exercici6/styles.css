@@ -56,6 +56,7 @@ background: rgb(254, 251, 216);
 display: grid;
 grid-template-columns: 1fr;
 justify-items: center;
+align-items: center;
 }
 .padre{
     height: 98%;
@@ -65,8 +66,8 @@ justify-items: center;
         "header"
         "section"
         "footer";
-    grid-template-rows: 30.82% 62.55% 4.63%;
-    gap: 1%;
+    grid-template-rows: 30.82% 61.55% 4.63%;
+    gap: 1.50%;
 }
     .header{
         grid-area: header;
@@ -92,6 +93,11 @@ justify-items: center;
                 display: grid;
                 grid-template-columns: repeat(7,1fr);
                 color: grey;
+                font-family: 'Roboto', sans-serif;
+                font-size: 13px;
+                text-align: center;
+                letter-spacing: 0.1em;
+
             }
                 .nav a:hover{
                     color:rgb(177, 74, 37);
@@ -111,6 +117,7 @@ justify-items: center;
             .social{
                 display: grid;
                 grid-template-columns: repeat(3,1fr);
+                font-size: 13px;
             }
                 .social a{
                     place-self: center center;
@@ -133,14 +140,19 @@ justify-items: center;
                     align-self: center;
                     font-size: 1.7em;
                     color: rgba(245, 107, 130,.7);
+                    font-weight: bolder;
                     letter-spacing: 0.10em;
                     text-align: center;
                 }
     section{
         grid-area: section;
         display: grid;
-        grid-template-columns: 80% 19%;
+        grid-template-columns: 75% 24%;
         gap: 1%;
+        font-family: 'Roboto', sans-serif;
+        font-size: 13px;
+        background: rgb(224,226,228);
+        padding: 0.4%;
     }
         .articulos{
             display: grid;
@@ -148,7 +160,7 @@ justify-items: center;
                 "article article"
                 "article article"
                 "navegacion navegacion";
-            grid-template-rows: 45% 45% 10%;
+            grid-template-rows: 46.5% 46.5% 5%;
             gap: 1%;
         }
             .article{
@@ -190,11 +202,15 @@ justify-items: center;
                         color:rgb(224,226,228);
                         font-weight:bolder;
                         letter-spacing: 0.1em;
-                        line-height: 25px;
-                        padding-left: 2%;
+                        display: grid;
+                    }
+                    .tema p{
+                        align-self: end;
+                        line-height: 9px;
                     }
                 .texto{
                         padding-left: 2%;
+                        align-self: center;
                     }
                 .btn{
                         cursor: pointer;
@@ -210,7 +226,82 @@ justify-items: center;
                     color: black;
                     justify-self: center;
                     align-self: center;
+                    text-align: center;
                 }
+        .publicidad{
+            display: grid;
+            grid-template-rows: 20% 15%;
+            gap: 1%;
+        }
+            .anuncio{
+                background: rgb(126,74,53);
+                color: white;
+                text-align: center;
+                padding: 2%;
+            }
     footer{
-        grid-area:footer;
+        grid-area: footer;
+        display: grid;
     }
+        .pie{
+            font-size: 13px;;
+            font-family: 'Roboto', sans-serif;
+            justify-self: center;
+            align-self: center;
+        }
+/*Media*/
+@media(max-width: 1074px){
+    .padre{
+        grid-template-rows: 20.82% 75.55% 1.62%;
+        gap: 1%;
+    }
+        .header{
+            grid-template-rows: 35% 65%;
+        }
+            .menu{
+            grid-template-columns: 10% 80% 10%;
+        }
+                .nav{
+                    grid-template-columns: 40% 40%;
+                    grid-template-rows: 33.33% 33.33% 33.33%;
+                    justify-content: center;
+                }
+                .social{
+                    grid-template-columns: 100%;
+                    grid-template-rows: 33.33% 33.33% 33.33%;
+                    justify-content: center;
+                }
+        section{
+            grid-template-columns: 100%; 
+            grid-template-rows: 85% 14%;
+            gap: 1%;
+            justify-content: center;
+        }
+            .articulos{
+                grid-template-columns: 49% 49%;
+                justify-content: center;
+            }
+            .publicidad{
+                grid-template-columns: 100%;
+                grid-template-rows: 48.5% 48.5%;
+                gap: 3%;
+                padding: 0% 0.5% 0% 0.5%;
+            }
+                .anuncio{
+                    padding: 0%;
+                    display: grid;
+                }
+                    .anuncio p{
+                        justify-self: center;
+                        align-self: center;
+                    }
+}
+/*Media*/
+@media(max-width: 520px){
+    section{
+        font-size: 12px;
+    }
+    article{
+        grid-template-rows: 45% 10% 35% 10%;
+        }
+}
