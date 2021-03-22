@@ -68,7 +68,7 @@ html, body {
     .header{
         height: 37.14%;
         width: 100%;
-        background: url(img/fonsm.jpg);
+        background: url(../img/fonsm.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

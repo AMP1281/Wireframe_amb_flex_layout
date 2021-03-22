@@ -129,7 +129,7 @@ align-items: center;
                 }
         .texto-principal{
             grid-area: principal;
-            background: url(img/fonsm.jpg);
+            background: url(../img/fonsm.jpg);
             background-position: unset;
             background-repeat: no-repeat;
             background-size: 100% 100%;
@@ -174,22 +174,22 @@ align-items: center;
                     border: 0.5px solid rgb(247, 63, 82);
                 }
                 .fechauno{
-                        background: url(img/fechauno.jpg);
+                        background: url(../img/fechauno.jpg);
                         background-size: 100% 100%;
                         display: grid;
                     }
                 .fechados{
-                        background: url(img/fechados.jpg);
+                        background: url(../img/fechados.jpg);
                         background-size: 100% 100%;
                         display: grid;
                     }
                 .fechatres{
-                        background: url(img/fechatres.jpg);
+                        background: url(../img/fechatres.jpg);
                         background-size: 100% 100%;
                         display: grid;
                     }
                 .fechaquatro{
-                        background: url(img/fechaquatro.jpg);
+                        background: url(../img/fechaquatro.jpg);
                         background-size: 100% 100%;
                         display: grid;
                     }
